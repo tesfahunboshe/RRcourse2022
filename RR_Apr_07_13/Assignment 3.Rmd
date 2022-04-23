@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Assignment 3"
 author: "Tesfahun Tegene Boshe"
 date: "4/14/2022"
@@ -23,6 +24,20 @@ over_avg <- season_data[season_data$viewers > mean(season_data$viewers),]
 ```
 
 # Game of Thrones - Season `r params$season` summary in numbers
+=======
+title: "Exercise 2"
+author: "Wojciech Hardy; Łukasz Nawaro"
+date: "3/29/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+load("../Data/season_1.RData")
+```
+
+# Game of Thrones - Season 1 summary in numbers
+>>>>>>> c70e7fe08e59c0478d2b8ccbf5c37c723949c615
 
 ### __(*Warning:* spoilers ahead)__
 
@@ -36,6 +51,7 @@ Set on the fictional continents of Westeros and Essos, Game of Thrones has a lar
 
 ***
 
+<<<<<<< HEAD
 ### Season `r params$season` summary
 
 Season `r params$season` of Game of Thrones consisted of `r length(season_data$no_overall)` episodes that aired between `r head(season_data, 1)["premiere_date"]` and `r tail(season_data, 1)["premiere_date"]` on HBO. The show gathered an average of `r mean(season_data$viewers)` million first-day TV viewers in the US, with the number growing from `r head(season_data, 1)["viewers"]` to `r tail(season_data, 1)["viewers"]` million by the end of the season.
@@ -43,6 +59,15 @@ Season `r params$season` of Game of Thrones consisted of `r length(season_data$n
 The most popular episode of the season was `r popular_episode$title`, in which:
 
 > `r popular_episode$description`
+=======
+### Season 1 summary
+
+Season 1 of Game of Thrones consisted of 10 episodes that aired between April 17 and June 19, 2011 on HBO. The show gathered an average of 2.515 first-day TV viewers in the US, with the number growing from 2.22 to 3.04 million by the end of the season.
+
+The most popular episode of the season was "Fire and Blood", in which:
+
+> "The North secedes from the Seven Kingdoms and proclaims Robb as king. With Jaime as the Starks' prisoner and Robert's two brothers, Stannis and Renly, each challenging Joffrey's claim to the throne, Tywin appoints Tyrion as acting King's Hand, while Tywin fights to defend Joffrey's reign. Jon attempts to desert the Night's Watch to avenge Ned and join Robb, but his Night's Watch brothers convince him to honor his oath. Jon joins an expedition to search for Benjen Stark beyond the Wall. Yoren, a Night's Watch recruiter, smuggles Arya out of King's Landing disguised as a boy, while Joffrey intends to crown Sansa his queen, despite executing her father. Daenerys's baby is born deformed and dead, and Drogo is left in a vegetative state by the witch's treacherous magic. Daenerys compassionately ends Drogo's life. She places the three dragon eggs on Drogo's funeral pyre and sets it afire, also burning the witch alive. Ignoring Jorah's pleas, she walks into the flames. When the embers die the following morning, Daenerys is found in the ashes, unharmed, flanked by three newly-hatched baby dragons. Jorah and other witnesses kneel before her."
+>>>>>>> c70e7fe08e59c0478d2b8ccbf5c37c723949c615
 
 ***
 
@@ -58,7 +83,14 @@ Finally, the episodes with the above-average viewership were:
 
 | No. in season | Title  | Directed by  |
 |:------        |:-----: |:------:      |
+<<<<<<< HEAD
 | `r over_avg$no_season[1]` | `r over_avg$title[1]`  | `r over_avg$directed_by[1]` |
 | `r over_avg$no_season[2]` | `r over_avg$title[2]`  | `r over_avg$directed_by[2]` |
 | `r over_avg$no_season[3]` | `r over_avg$title[3]`  | `r over_avg$directed_by[3]` |
 | `r over_avg$no_season[4]` | `r over_avg$title[4]`  | `r over_avg$directed_by[4]` |
+=======
+| 5             | "The Wolf and the Lion"  | Brian Kirk      |
+| 8             | "The Pointy End" | Daniel Minahan      |
+| 9             | "Baelor" | Alan Taylor      |
+| 10            | "Fire and Blood" | Alan Taylor      |
+>>>>>>> c70e7fe08e59c0478d2b8ccbf5c37c723949c615
