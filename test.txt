@@ -1,0 +1,8 @@
+tesfahuntegene6@instance-1:~$ uname-a
+uname-a: command not found
+tesfahuntegene6@instance-1:~$ uname -a
+Linux instance-1 5.15.0-1003-gcp #6-Ubuntu SMP Thu Mar 31 15:55:23 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+tesfahuntegene6@instance-1:~$ touch test.txt
+tesfahuntegene6@instance-1:~$ ls -l
+total 0
+-rw-rw-r-- 1 tesfahuntegene6 tesfahuntegene6 0 May 12 13:08 test.txt
